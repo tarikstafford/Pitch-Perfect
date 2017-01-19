@@ -28,7 +28,7 @@ class RecordSoundsViewController: UIViewController, AVAudioRecorderDelegate {
     }
 
     @IBAction func RecordButton(_ sender: Any) {
-        RecordingLabel.text = "Recording"
+        RecordingLabel.text = "Recording..."
         StopRecordingButton.isEnabled = true
         RecordingButton.isEnabled = false
         
@@ -49,13 +49,17 @@ class RecordSoundsViewController: UIViewController, AVAudioRecorderDelegate {
     @IBAction func StopRecording(_ sender: Any) {
         RecordingButton.isEnabled = true
         StopRecordingButton.isEnabled = false
-        RecordingLabel.text = "Tap to Record"
+        RecordingLabel.text = "Tap to Record."
         audioRecorder.stop()
         let audioSession = AVAudioSession.sharedInstance()
         try! audioSession.setActive(false)
 }
     func audioRecorderDidFinishRecording(_ recorder: AVAudioRecorder, successfully flag: Bool) {
+        if flag {
         performSegue(withIdentifier: "stopRecording", sender: audioRecorder.url)
+        } else {
+            print("Recording was not successful.")
+        }
     }
 }
 
