@@ -30,16 +30,16 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tap To Record" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kTC-kT-Ag2">
-                                <rect key="frame" x="132" y="472" width="110.5" height="20.5"/>
+                                <rect key="frame" x="132" y="419" width="110.5" height="20.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GYR-Ti-7Cn">
-                                <rect key="frame" x="160" y="518" width="55" height="55"/>
+                                <rect key="frame" x="160" y="481" width="55" height="55"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="55" id="2OV-iU-egT"/>
-                                    <constraint firstAttribute="height" constant="55" id="aZj-em-oDl"/>
+                                    <constraint firstAttribute="height" constant="55" id="ObS-Z6-Lw0"/>
+                                    <constraint firstAttribute="width" constant="55" id="bou-tk-OKk"/>
                                 </constraints>
                                 <state key="normal" image="Stop"/>
                                 <connections>
@@ -49,11 +49,11 @@
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="GYR-Ti-7Cn" firstAttribute="centerX" secondItem="kTC-kT-Ag2" secondAttribute="centerX" id="4Jw-ec-cgu"/>
-                            <constraint firstItem="kTC-kT-Ag2" firstAttribute="top" secondItem="1fe-xy-8zQ" secondAttribute="bottom" constant="61" id="7QW-bl-VkG"/>
+                            <constraint firstItem="GYR-Ti-7Cn" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="6T2-GJ-13a"/>
                             <constraint firstItem="1fe-xy-8zQ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Al1-wA-vhF"/>
-                            <constraint firstItem="GYR-Ti-7Cn" firstAttribute="top" secondItem="kTC-kT-Ag2" secondAttribute="bottom" constant="25.5" id="Xgf-T1-KIh"/>
-                            <constraint firstItem="kTC-kT-Ag2" firstAttribute="centerX" secondItem="1fe-xy-8zQ" secondAttribute="centerX" id="g9Y-IW-ZUH"/>
+                            <constraint firstItem="GYR-Ti-7Cn" firstAttribute="top" secondItem="kTC-kT-Ag2" secondAttribute="bottom" constant="41.5" id="DQr-p0-g8b"/>
+                            <constraint firstItem="kTC-kT-Ag2" firstAttribute="top" secondItem="1fe-xy-8zQ" secondAttribute="bottom" constant="8" id="m2n-fU-VJh"/>
+                            <constraint firstItem="kTC-kT-Ag2" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="zPb-PA-1O4"/>
                             <constraint firstItem="1fe-xy-8zQ" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="zus-LW-N7g"/>
                         </constraints>
                     </view>
